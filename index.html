@@ -5,54 +5,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TRUST DEVELOPMENT LLC</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #fff; }
+    header { background-color: #001f3f; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+    header nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .hero {
+      position: relative;
+      background: url('TDWS1.png') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      color: white;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      font-size: 36px;
+      border-radius: 10px;
+    }
+    .search-bar {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+    .search-bar input, .search-bar select {
+      padding: 10px;
+      margin: 5px;
+      width: 200px;
+    }
+    .services {
+      padding: 40px;
+      background-color: #fafafa;
+    }
+    .services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      color: #001f3f;
+    }
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; background: #fff; color: #000;">
-  <header style="padding: 20px; background: #f5f5f5;">
-    <h1 style="margin: 0; color: #e70012;">TRUST DEVELOPMENT LLC</h1>
+<body>
+
+  <header>
+    <div><strong>TRUST DEVELOPMENT LLC</strong></div>
     <nav>
-      <a href="#servicios">Servicios</a> |
-      <a href="#software">Software Educativo</a> |
-      <a href="#nosotros">Sobre Nosotros</a> |
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
-  <main style="padding: 40px;">
-    <section class="hero" style="text-align: center;">
-      <h2>Consultoría e Inversión en Bienes Raíces Multifamiliares</h2>
-      <p>Fideicomisos | Inversiones conjuntas | Educación paso a paso</p>
-      <button style="padding: 10px 20px; background-color: #e70012; color: white; border: none; border-radius: 5px;">Comienza hoy</button>
-    </section>
-    <section id="servicios" style="margin-top: 50px;">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Consultoría Inmobiliaria</li>
-        <li>Fideicomisos e Inversiones Conjuntas</li>
-        <li>Permisología y Desarrollo</li>
-      </ul>
-    </section>
-    <section id="software" style="margin-top: 50px;">
-      <h2>Software Educativo</h2>
-      <ul>
-        <li>1. Preparación para invertir</li>
-        <li>2. Compra y análisis financiero</li>
-        <li>3. Permisos y reglamentos en PR</li>
-        <li>4. Desarrollo y gestión de propiedad</li>
-      </ul>
-    </section>
-    <section id="nosotros" style="margin-top: 50px;">
-      <h2>Sobre Nosotros</h2>
-      <p>En TRUST DEVELOPMENT LLC, creemos que la educación y la transparencia son clave para una inversión segura. Nuestra fundadora, Priscila Cintrón, combina experiencia en bienes raíces y desarrollo comunitario para guiar a nuestros clientes desde el primer paso hasta el éxito.</p>
-    </section>
-    <section id="contacto" style="margin-top: 50px;">
-      <h2>Contacto</h2>
-      <form>
-        <input type="text" placeholder="Nombre" style="display:block;width:100%;margin-bottom:10px;" required>
-        <input type="email" placeholder="Email" style="display:block;width:100%;margin-bottom:10px;" required>
-        <textarea placeholder="Mensaje" style="display:block;width:100%;margin-bottom:10px;" required></textarea>
-        <button type="submit" style="padding: 10px 20px; background-color: #e70012; color: white;">Enviar</button>
-      </form>
-    </section>
-  </main>
-  <footer style="background: #333; color: #fff; text-align: center; padding: 20px;">© 2025 TRUST DEVELOPMENT LLC</footer>
+
+  <section class="hero">
+    <h1>NECESITAS SOCIOS CONFIABLES PARA INVERTIR</h1>
+  </section>
+
+  <section class="search-bar">
+    <input type="text" placeholder="¿Qué estás buscando?">
+    <select>
+      <option>En venta</option>
+      <option>Para alquilar</option>
+    </select>
+    <select>
+      <option>Ubicación</option>
+      <option>San Juan</option>
+      <option>Bayamón</option>
+      <option>Caguas</option>
+    </select>
+    <button style="padding: 10px 20px;">Buscar</button>
+  </section>
+
+  <section id="servicios" class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Consultoría Inmobiliaria</h3>
+        <p>Te guiamos desde el análisis hasta el cierre de tu inversión multifamiliar.</p>
+      </div>
+      <div class="card">
+        <h3>Fideicomisos e Inversiones Conjuntas</h3>
+        <p>Accede a inversiones seguras con estructuras legales profesionales.</p>
+      </div>
+      <div class="card">
+        <h3>Permisología y Desarrollo</h3>
+        <p>Facilitamos permisos, planificación y ejecución para tu proyecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 TRUST DEVELOPMENT LLC - Todos los derechos reservados
+  </footer>
+
 </body>
 </html>
